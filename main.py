@@ -5,6 +5,7 @@ import pandas as pd
 from collections import OrderedDict
 
 app = Dash(__name__)
+server = app.server
 
 df_typing_formatting = pd.DataFrame(OrderedDict([
     ('city', ['NYC', 'Montreal', 'Los Angeles']),
